@@ -1,0 +1,97 @@
+/* src/components/NavBar.css */
+
+.navbar {
+  display: flex;
+  align-items: center;
+  padding: 1rem 2rem;
+  background-color: #FF0000;
+}
+
+.navbar-brand a {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.navbar-logo {
+  height: 40px; /* Adjust the size as needed */
+}
+
+.navbar-icons {
+  display: flex;
+  align-items: center;
+  gap: 2rem; /* Adjust this value to increase/decrease spacing */
+  width: fit-content;
+  position: absolute;
+  right: 40px;
+}
+
+.icon {
+  color: #fff;
+  font-size: 1.5rem;
+  transition: color 0.3s;
+}
+
+.icon:hover {
+  color: #ccc;
+}
+
+/* Adjust the icon size for the image */
+.navbar-icons img.icon {
+  height: 1.5rem; /* Adjust the size as needed */
+}
+
+.sign-in-button {
+  background-color: #fff; /* Pure white background */
+  color: #FF0000; /* Dark text color for contrast */
+  border: none; /* Remove border */
+  padding: 0.5rem 1.5rem;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 6px; /* Rounded rectangle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'F1-Font-Normal', sans-serif; /* Use your custom font */
+  font-weight: bold;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.sign-in-button:hover {
+  background-color: #f5f5f2f5; /* Slightly darker white on hover */
+  color: #FF0000; /* Darker text color on hover */
+}
+
+.navbar-links {
+  display: flex;
+  gap: 40px; /* Adjust spacing between links */
+  margin-left: 60px;
+  padding: 0;
+}
+
+.nav-link {
+  color: #fff; /* White text color */
+  text-decoration: none; /* Remove underline */
+  font-family: 'F1-Font-Normal', sans-serif; /* Apply your custom font */
+  font-weight: normal;
+}
+
+.nav-link:hover {
+  text-decoration: underline; /* Underline on hover for better visibility */
+}
+
+@font-face {
+  font-family: 'F1-Font-Normal'; /* Name for the font */
+  src: url('../fonts/Formula1-Display-Regular.woff2') format('woff2'),
+       url('../fonts/Formula1-Display-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Responsive Navbar */
+@media (max-width: 768px) {
+  .navbar-icons {
+    flex-direction: column;
+    gap: 1rem; /* Adjust this value to increase/decrease spacing for mobile view */
+  }
+}

@@ -1,0 +1,77 @@
+.standings-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.standings-table th, .standings-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+.standings-table th {
+    background-color: #f4f4f4;
+    font-family: 'F1-Font-Normal', sans-serif; /* Apply the custom font */
+    font-weight: normal;
+}
+
+.standings-table td {
+    font-family: 'F1-Font-Normal', sans-serif; /* Apply the custom font */
+    font-weight: normal;
+}
+
+.standings-table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.standings-table tr:hover {
+    background-color: #ddd;
+}
+
+.flag-image {
+    width: 100px;
+    height: auto;
+}
+
+.headshot-image {
+    width: 80px; /* Adjust width as needed */
+    height: 80px; /* Adjust height as needed */
+    border-radius: 50%; /* Keeps the image round */
+    vertical-align: middle; /* Aligns image vertically */
+    margin-right: 10px; /* Adds space to the right of the image */
+}
+
+.table-container {
+    padding: 20px; /* Adjust padding as needed */
+    margin-bottom: 20px; /* Space below the table */
+}
+
+@font-face {
+    font-family: 'F1-Font-Normal'; /* Name for the font */
+    src: url('../fonts/Formula1-Display-Regular.woff2') format('woff2'),
+         url('../fonts/Formula1-Display-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'F1-Font-Bold'; /* Name for the font */
+    src: url('../fonts/Formula1-Display-Regular.woff2') format('woff2'),
+         url('../fonts/Formula1-Display-Regular.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+
+.loading-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full height of the viewport */
+  }
+  
+  .loading-gif {
+    width: 100px; /* Adjust size as needed */
+    height: 100px; /* Adjust size as needed */
+  }
+
